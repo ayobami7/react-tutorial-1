@@ -4,9 +4,7 @@ import Logo from "../assets/logo.png"
 
 const Footer= () => {
 
-    const getDate = () => {
-         currentYear = new Date().getFullYear();
-    }
+    const currentYear = new Date().getFullYear();
 
   return (
     <div className='bg-[#071497] md:px-14 p-4 max-w-screen-2xl mx-auto '>
@@ -63,7 +61,7 @@ const Footer= () => {
 
         <hr />
         <div className='flex flex-col sm:flex-row gap-8 sm:items-center justify-between my-2 text-gray-300'>
-            <p>@ LOGO<span>{getDate.currentYear}</span>. All rights reserved.</p>
+            <p>@ LOGO <span>{currentYear}</span>. All rights reserved.</p>
             <div className='flex items-center space-x-5 text-gray-300'>
                 <FaFacebook className='w-8 cursor-pointer hover:-translate-y-1 transition-allduration-300'/>
                 <FaInstagram className='w-8 cursor-pointer hover:-translate-y-1 transition-allduration-300'/>
